@@ -5,7 +5,7 @@ A small Python script that uses a very simple approach to finding hardcoded secr
 - Save this script as `search_secrets.py`.
 - Run it from the command line, providing the directory to search as an argument:
 
-    python search_secrets.py <directory>
+    `python search_secrets.py <directory>`
 
 ## Description
 This Python script will search a given directory for hardcoded secrets in code, such as API keys or passwords, using regular expressions (regex). Please note that this script will not catch all secrets, and you should always use proper secret management tools for better security. That said, short of using any tool whatsoever, this small script could be Step 0 toward a better secret management tool.
