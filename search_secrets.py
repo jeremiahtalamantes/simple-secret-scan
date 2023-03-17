@@ -18,6 +18,9 @@ def search_secrets(directory):
 
     for root, _, files in os.walk(directory):
         for file in files:
+            #
+            # Modify file extensions for any other files you want to include
+            #
             if file.endswith((".py", ".js", ".json", ".yml", ".yaml", ".xml", ".ini", ".properties", ".txt")):
                 file_path = os.path.join(root, file)
                 with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
